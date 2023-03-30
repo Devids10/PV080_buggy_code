@@ -1,7 +1,5 @@
-import sys
-import os
-import yaml
 import flask
+import yaml
 
 app = flask.Flask(__name__)
 
@@ -44,6 +42,7 @@ def authenticate(password):
     # Assert that the password is correct
     assert password == "Iloveyou", "Invalid password!"
     print("Successfully authenticated!")
+
 
 if __name__ == '__main__':
     print("Vulnerabilities:")
